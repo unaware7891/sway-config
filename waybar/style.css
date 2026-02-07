@@ -1,0 +1,133 @@
+@import url("/home/zero/.cache/hellwal/waybar-colors.css");
+/* so turn out i can't use ~/ way to put url */
+
+/* ---- Palette ---- */
+@define-color bg        @background;
+@define-color bg_soft   @color8;
+@define-color fg        @foreground;
+
+@define-color rosewater @color15;
+@define-color flamingo  @color13;
+@define-color pink      @color5;
+@define-color mauve     @color12;
+@define-color red       @color1;
+@define-color peach     @color3;
+@define-color yellow    @color11;
+@define-color green     @color2;
+@define-color teal      @color14;
+@define-color blue      @color4;
+@define-color lavender  @color6;
+@define-color gray      @color8;
+
+/*  Global */
+* {
+  all: unset;
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 12px;
+  color: @fg;
+}
+
+/* Bar  */
+window#waybar {
+  background: @bg;
+}
+
+/* Layout */
+.modules-left  { margin-left: 8px; }
+.modules-right { margin-right: 8px; }
+
+/* Arch icon */
+#custom-arch {
+  color: @blue;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+/* Workspaces */
+#workspaces button {
+  all: unset;
+  padding: 0 7px;
+  margin: 0 2px;
+  color: @gray;
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 12px;
+}
+
+/* ACTIVE workspace */
+#workspaces button.focused {
+  color: @fg;
+  font-weight: 800;
+}
+
+/* Visible */
+#workspaces button.visible {
+  color: @blue;
+}
+
+/* Urgent */
+#workspaces button.urgent {
+  color: @red;
+}
+
+/* Hover */
+#workspaces button:hover {
+  color: @fg;
+}
+
+/* CENTER */
+
+#clock {
+  font-weight: 700;
+}
+
+/* RIGHT */
+
+#memory     { color: @teal; }
+#cpu        { color: @mauve; }
+#network    { color: @blue; }
+#pulseaudio { color: @green; }
+#backlight  { color: @yellow; }
+#battery    { color: @peach; }
+
+#memory,
+#cpu,
+#network,
+#pulseaudio,
+#backlight,
+#battery {
+  margin: 0 7px;
+}
+
+/* Battery states */
+#battery.charging,
+#battery.plugged {
+  color: @green;
+}
+
+#battery.warning:not(.charging) {
+  color: @yellow;
+}
+
+#battery.critical:not(.charging) {
+  color: @red;
+}
+
+/* Muted audio */
+#pulseaudio.muted {
+  color: @gray;
+}
+
+/* Tray */
+#tray {
+  margin-left: 8px;
+  margin-right: 12px;
+}
+
+/* Tooltips */
+tooltip {
+  background: @bg_soft;
+  color: @fg;
+  padding: 6px;
+  border-radius: 6px;
+}
+

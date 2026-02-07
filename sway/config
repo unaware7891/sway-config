@@ -6,7 +6,7 @@ include inputs.conf
 include outputs.conf
 
 # Keybindings & behavior
-include Keybindings.conf
+include keybindings.conf
 
 # System stuff
 include autostart.conf

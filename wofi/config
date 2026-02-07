@@ -1,0 +1,16 @@
+show=drun
+prompt=Run
+layer=top
+location=center
+width=36%
+height=28%
+lines=8
+columns=1
+matching=fuzzy
+insensitive=true
+term=alacritty
+allow-images=false
+hide-scroll=true
+no-actions=true
+parse-search=true
+

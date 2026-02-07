@@ -1,0 +1,24 @@
+font=JetBrainsMono Nerd Font 10
+
+# Colors (hellwal)
+background-color=#1d2021
+text-color=#e2d3ba
+border-color=#89b482
+
+# Geometry
+width=300
+padding=10,15
+outer-margin=10
+border-size=2
+border-radius=0
+
+# Position & behavior
+anchor=top-right
+default-timeout=1500
+max-visible=3
+layer=overlay
+
+# Disable icons & markup
+icons=0
+markup=0
+
